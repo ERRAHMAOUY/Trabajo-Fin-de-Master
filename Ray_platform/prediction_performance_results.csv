@@ -1,0 +1,7 @@
+model_name;batch_size;prediction_time;records_per_second;avg_cpu;max_cpu;avg_memory;max_memory
+Random Forest;1000;3,57354E+16;2,79835E+16;9E+15;12;334;334
+Random Forest;5000;2,64122E+16;1,89306E+15;3;6;334;334
+Decision Tree;1000;3,98874E+16;2,50706E+15;6;6;334;334
+Decision Tree;5000;6,40392E+15;7,80771E+14;6;6;334;334
+Logistic Regression;1000;3,55244E+15;2,81497E+16;6;12;335;335
+Logistic Regression;5000;2,96593E+16;1,68581E+16;245;37;335;335
