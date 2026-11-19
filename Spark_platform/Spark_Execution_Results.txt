@@ -1,0 +1,696 @@
+
+Welcome to the Azure Machine Learning terminal
+
+Enter "git clone [url]" to clone a repo                         
+Enter "git --help" to learn about Git CLI. To learn more about integrating Git with the Azure Machine Learning terminal, navigate here:
+        https://learn.microsoft.com/en-us/azure/machine-learning/concept-train-model-git-integration#clone-git-repositories-into-your-workspace-file-system
+Enter "az ml --help" to learn about Azure ML CLI v2  
+
+Note: Use "az login --identity" instead of "az login" to avoid device code authentication
+
+
+(azureml_py38) azureuser@computeinw:~/cloudfiles/code/Users/bra_er-rahmaouy$ python WorflowSpark.py 
+Starting the Spark ML Performance Analysis...
+Initializing Spark session...
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/05/05 21:08:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Loading and processing data...
+Data loaded successfully. Total records: 7615820                                                                        
+Creating and applying feature pipeline...
+25/05/05 21:10:25 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS(0 + 16) / 17]
+25/05/05 21:10:35 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.lapack.JNILAPACK          
+                                                                                                                        
+Processing dataset size: 1M
+
+Training Random Forest...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Random Forest on 1M dataset
+Collected 10 metrics over 9.5 seconds===============>                                                      (7 + 9) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.5 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds                                                                      (0 + 1) / 1]
+Collected 50 metrics over 49.6 seconds==============>                                                      (7 + 9) / 16]
+Collected 60 metrics over 59.6 seconds                                                                    (0 + 16) / 17]
+Collected 70 metrics over 69.6 seconds                                                                      (0 + 1) / 1]
+Collected 80 metrics over 79.6 seconds===============>                                                     (7 + 9) / 16]
+Collected 90 metrics over 89.6 seconds                                                                    (0 + 16) / 17]
+Collected 100 metrics over 99.7 seconds                                                                     (0 + 1) / 1]
+Collected 110 metrics over 109.7 seconds                                                                    (0 + 1) / 1]
+Collected 120 metrics over 119.7 seconds======>                                                           (6 + 10) / 16]
+Collected 130 metrics over 129.7 seconds                                                                  (0 + 16) / 17]
+Collected 140 metrics over 139.7 seconds                                                                                
+Collected 150 metrics over 149.7 seconds==============================>                                   (10 + 6) / 16]
+Collected 160 metrics over 159.8 seconds                                                                  (0 + 16) / 17]
+Collected 170 metrics over 169.8 seconds                                                                                
+Collected 180 metrics over 179.8 seconds                                                                  (0 + 16) / 16]
+Collected 190 metrics over 189.8 seconds======>                                                           (6 + 10) / 16]
+Collected 200 metrics over 199.8 seconds                                                                  (0 + 16) / 17]
+Collected 210 metrics over 209.8 seconds                                                                                
+Collected 220 metrics over 219.9 seconds=========================>                                         (9 + 7) / 16]
+Collected 230 metrics over 229.9 seconds                                                                  (0 + 16) / 17]
+Collected 240 metrics over 239.9 seconds                                                                  (2 + 14) / 16]
+Collected 250 metrics over 249.9 seconds                                                                  (0 + 16) / 17]
+Collected 260 metrics over 259.9 seconds                                                                                
+Collected 270 metrics over 269.9 seconds====================================>                             (11 + 5) / 16]
+Collected 280 metrics over 280.0 seconds=====================>                                             (9 + 8) / 17]
+Collected 290 metrics over 290.0 seconds                                                                    (0 + 1) / 1]
+Collected 300 metrics over 300.0 seconds                                                                    (0 + 1) / 1]
+Collected 310 metrics over 310.0 seconds===================>                                               (8 + 8) / 16]
+Collected 320 metrics over 320.0 seconds                                                                  (0 + 16) / 17]
+Collected 330 metrics over 330.0 seconds                                                                  (0 + 16) / 16]
+Collected 340 metrics over 340.1 seconds                                                                  (0 + 16) / 17]
+Collected 350 metrics over 350.1 seconds============================================================>     (16 + 1) / 17]
+Training completed in 349.89 seconds
+Collected 360 metrics over 360.1 seconds===================>                                               (8 + 8) / 16]
+Collected 370 metrics over 370.2 seconds                                                                  (0 + 16) / 17]
+Stopping monitoring, collected 379 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Random Forest, Dataset: 1M
+CPU: avg=46.39%, max=97.90%
+Memory: avg=20.87%, max=21.80%
+Model Random Forest evaluation completed: AUC=0.6647, Accuracy=0.7510, f1_score=0.6640
+
+
+Training Decision Tree...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Decision Tree on 1M dataset
+Collected 10 metrics over 9.5 seconds================>                                                     (7 + 9) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.5 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds                                                                    (2 + 14) / 16]
+Collected 50 metrics over 49.6 seconds                                                                    (0 + 16) / 17]
+Collected 60 metrics over 59.6 seconds                                                                      (0 + 1) / 1]
+Collected 70 metrics over 69.6 seconds                                                                    (0 + 16) / 16]
+Collected 80 metrics over 79.6 seconds                                                                    (0 + 16) / 17]
+Collected 90 metrics over 89.6 seconds                                                                      (0 + 1) / 1]
+Collected 100 metrics over 99.7 seconds                                                                   (1 + 15) / 16]
+Collected 110 metrics over 109.7 seconds                                                                  (0 + 16) / 17]
+Collected 120 metrics over 119.7 seconds                                                                    (0 + 1) / 1]
+Collected 130 metrics over 129.7 seconds=========================>                                         (9 + 7) / 16]
+Collected 140 metrics over 139.7 seconds                                                                  (0 + 16) / 17]
+Collected 150 metrics over 149.7 seconds                                                                                
+Collected 160 metrics over 159.8 seconds                                                                  (0 + 16) / 16]
+Collected 170 metrics over 169.8 seconds                                                                  (0 + 16) / 17]
+Collected 180 metrics over 179.8 seconds                                                                    (0 + 1) / 1]
+Collected 190 metrics over 189.8 seconds===================>                                               (8 + 8) / 16]
+Collected 200 metrics over 199.8 seconds                                                                  (0 + 16) / 17]
+Collected 210 metrics over 209.9 seconds                                                                  (0 + 16) / 16]
+Collected 220 metrics over 219.9 seconds                                                                  (0 + 16) / 17]
+Collected 230 metrics over 229.9 seconds============================================================>     (16 + 1) / 17]
+Collected 240 metrics over 239.9 seconds=============>                                                     (7 + 9) / 16]
+Collected 250 metrics over 249.9 seconds                                                                  (0 + 16) / 17]
+Collected 260 metrics over 259.9 seconds                                                                    (0 + 1) / 1]
+Training completed in 262.98 seconds                                                                                    
+Collected 270 metrics over 269.9 seconds                                                                  (0 + 16) / 16]
+Collected 280 metrics over 280.0 seconds                                                                  (0 + 16) / 17]
+Collected 290 metrics over 290.0 seconds============================================================>     (16 + 1) / 17]
+Stopping monitoring, collected 295 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Decision Tree, Dataset: 1M
+CPU: avg=48.86%, max=97.40%
+Memory: avg=22.07%, max=22.40%
+Model Decision Tree evaluation completed: AUC=0.5282, Accuracy=0.7534, f1_score=0.6876
+
+
+Training Logistic Regression...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Logistic Regression on 1M dataset
+Collected 10 metrics over 9.5 seconds                                                                     (0 + 16) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.5 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds                                                                    (0 + 16) / 16]
+Collected 50 metrics over 49.6 seconds                                                                    (0 + 16) / 17]
+Collected 60 metrics over 59.6 seconds==============================================================>     (16 + 1) / 17]
+Collected 70 metrics over 69.6 seconds                                                                    (0 + 16) / 16]
+Collected 80 metrics over 79.6 seconds
+Collected 90 metrics over 89.7 seconds                                                                    (0 + 16) / 17]
+Collected 100 metrics over 99.7 seconds                                                                                 
+Collected 110 metrics over 109.7 seconds                                                                  (0 + 16) / 16]
+Collected 120 metrics over 119.7 seconds                                                                  (0 + 16) / 17]
+Collected 130 metrics over 129.7 seconds                                                                    (0 + 1) / 1]
+Collected 140 metrics over 139.7 seconds                                                                  (0 + 16) / 16]
+Collected 150 metrics over 149.8 seconds                                                                  (0 + 16) / 17]
+Collected 160 metrics over 159.8 seconds                                                                    (0 + 1) / 1]
+Collected 170 metrics over 169.8 seconds                                                                  (0 + 16) / 16]
+Collected 180 metrics over 179.8 seconds                                                                  (0 + 16) / 17]
+Collected 190 metrics over 189.9 seconds============================================================>     (16 + 1) / 17]
+Collected 200 metrics over 199.9 seconds                                                                  (0 + 16) / 16]
+Collected 210 metrics over 209.9 seconds                                                                  (0 + 16) / 17]
+Collected 220 metrics over 219.9 seconds============================================================>     (16 + 1) / 17]
+Collected 230 metrics over 229.9 seconds=============>                                                     (7 + 9) / 16]
+Collected 240 metrics over 239.9 seconds                                                                  (0 + 16) / 17]
+Collected 250 metrics over 250.0 seconds                                                                    (0 + 1) / 1]
+Collected 260 metrics over 260.0 seconds                                                                  (0 + 16) / 16]
+Collected 270 metrics over 270.0 seconds                                                                  (0 + 16) / 17]
+Collected 280 metrics over 280.0 seconds============================================================>     (16 + 1) / 17]
+Collected 290 metrics over 290.0 seconds======>                                                           (6 + 10) / 16]
+Collected 300 metrics over 300.0 seconds                                                                  (0 + 16) / 17]
+Training completed in 305.99 seconds================================================================>     (16 + 1) / 17]
+Collected 310 metrics over 310.1 seconds                                                                  (0 + 16) / 16]
+Collected 320 metrics over 320.1 seconds                                                                  (0 + 16) / 17]
+Collected 330 metrics over 330.1 seconds============================================================>     (16 + 1) / 17]
+Stopping monitoring, collected 337 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Logistic Regression, Dataset: 1M
+CPU: avg=47.25%, max=98.50%
+Memory: avg=22.45%, max=22.70%
+Model Logistic Regression evaluation completed: AUC=0.6328, Accuracy=0.7447, f1_score=0.6412
+
+
+
+Processing dataset size: 4M
+
+Training Random Forest...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Random Forest on 4M dataset
+Collected 10 metrics over 9.5 seconds================>                                                     (7 + 9) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.5 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds
+Collected 50 metrics over 49.6 seconds                                                                      (0 + 1) / 1]
+Collected 60 metrics over 59.6 seconds                                                                      (0 + 1) / 1]
+Collected 70 metrics over 69.6 seconds                                                                      (0 + 1) / 1]
+Collected 80 metrics over 79.6 seconds                                                                    (0 + 16) / 16]
+Collected 90 metrics over 89.6 seconds==>                                                                 (5 + 11) / 16]
+Collected 100 metrics over 99.7 seconds                                                                   (0 + 16) / 17]
+Collected 110 metrics over 109.7 seconds                                                                    (0 + 1) / 1]
+Collected 120 metrics over 119.7 seconds                                                                  (0 + 16) / 16]
+Collected 130 metrics over 129.7 seconds======>                                                           (6 + 10) / 16]
+Collected 140 metrics over 139.8 seconds                                                                  (0 + 16) / 17]
+Collected 150 metrics over 149.8 seconds                                                                    (0 + 1) / 1]
+Collected 160 metrics over 159.8 seconds
+Collected 170 metrics over 169.8 seconds                                                                    (0 + 1) / 1]
+Collected 180 metrics over 179.8 seconds                                                                    (0 + 1) / 1]
+Collected 190 metrics over 189.8 seconds                                                                    (0 + 1) / 1]
+Collected 200 metrics over 199.9 seconds                                                                  (0 + 16) / 16]
+Collected 210 metrics over 209.9 seconds                                                                  (0 + 16) / 17]
+Collected 220 metrics over 219.9 seconds============================================================>     (16 + 1) / 17]
+Collected 230 metrics over 229.9 seconds                                                                    (0 + 1) / 1]
+Collected 240 metrics over 239.9 seconds                                                                  (0 + 16) / 16]
+Collected 250 metrics over 249.9 seconds                                                                  (0 + 16) / 17]
+Collected 260 metrics over 260.0 seconds                                                                    (0 + 1) / 1]
+Collected 270 metrics over 270.0 seconds
+Collected 280 metrics over 280.0 seconds                                                                    (0 + 1) / 1]
+Collected 290 metrics over 290.0 seconds                                                                    (0 + 1) / 1]
+Collected 300 metrics over 300.0 seconds                                                                    (0 + 1) / 1]
+Collected 310 metrics over 310.0 seconds                                                                    (0 + 1) / 1]
+Collected 320 metrics over 320.1 seconds====================================>                             (11 + 5) / 16]
+Collected 330 metrics over 330.1 seconds                                                                  (0 + 16) / 17]
+Collected 340 metrics over 340.1 seconds                                                                    (0 + 1) / 1]
+Collected 350 metrics over 350.1 seconds                                                                  (0 + 16) / 16]
+Collected 360 metrics over 360.1 seconds============================================================>     (15 + 1) / 16]
+Collected 370 metrics over 370.1 seconds============================================================>     (16 + 1) / 17]
+Collected 380 metrics over 380.2 seconds                                                                  (0 + 16) / 16]
+Collected 390 metrics over 390.2 seconds                                                                  (0 + 16) / 17]
+Collected 400 metrics over 400.2 seconds                                                                    (0 + 1) / 1]
+Collected 410 metrics over 410.2 seconds==============================>                                   (10 + 6) / 16]
+Collected 420 metrics over 420.2 seconds                                                                  (0 + 16) / 17]
+Collected 430 metrics over 430.2 seconds                                                                    (0 + 1) / 1]
+Collected 440 metrics over 440.3 seconds                                                                    (0 + 1) / 1]
+Collected 450 metrics over 450.3 seconds                                                                    (0 + 1) / 1]
+Collected 460 metrics over 460.3 seconds                                                                    (0 + 1) / 1]
+Collected 470 metrics over 470.3 seconds                                                                    (0 + 1) / 1]
+Collected 480 metrics over 480.3 seconds                                                                    (0 + 1) / 1]
+Collected 490 metrics over 490.3 seconds                                                                    (0 + 1) / 1]
+Collected 500 metrics over 500.4 seconds                                                                  (1 + 15) / 16]
+Collected 510 metrics over 510.4 seconds                                                                  (0 + 16) / 17]
+Collected 520 metrics over 520.4 seconds                                                                  (0 + 16) / 16]
+Collected 530 metrics over 530.4 seconds======================================================>           (14 + 2) / 16]
+Collected 540 metrics over 540.4 seconds                                                                  (0 + 16) / 17]
+Training completed in 543.97 seconds================================================================>     (16 + 1) / 17]
+Collected 550 metrics over 550.4 seconds                                                                  (0 + 16) / 16]
+Collected 560 metrics over 560.5 seconds                                                                  (0 + 16) / 17]
+Collected 570 metrics over 570.5 seconds============================================================>     (16 + 1) / 17]
+Collected 580 metrics over 580.5 seconds                                                                    (0 + 1) / 1]
+Stopping monitoring, collected 582 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Random Forest, Dataset: 4M
+CPU: avg=32.47%, max=99.40%
+Memory: avg=27.59%, max=29.70%
+Model Random Forest evaluation completed: AUC=0.6594, Accuracy=0.7549, f1_score=0.6748
+
+
+Training Decision Tree...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Decision Tree on 4M dataset
+Collected 10 metrics over 9.5 seconds================>                                                     (7 + 9) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.5 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds
+Collected 50 metrics over 49.6 seconds                                                                    (0 + 16) / 16]
+Collected 60 metrics over 59.6 seconds==================================================>                 (13 + 3) / 16]
+Collected 70 metrics over 69.6 seconds                                                                    (0 + 16) / 17]
+Collected 80 metrics over 79.6 seconds                                                                      (0 + 1) / 1]
+Collected 90 metrics over 89.6 seconds                                                                    (0 + 16) / 16]
+Collected 100 metrics over 99.7 seconds=============================================================>     (15 + 1) / 16]
+Collected 110 metrics over 109.7 seconds============================================================>     (16 + 1) / 17]
+Collected 120 metrics over 119.7 seconds                                                                    (0 + 1) / 1]
+Collected 130 metrics over 129.7 seconds                                                                                
+Collected 140 metrics over 139.7 seconds                                                                  (0 + 16) / 16]
+Collected 150 metrics over 149.7 seconds                                                                  (0 + 16) / 17]
+Collected 160 metrics over 159.8 seconds                                                                    (0 + 1) / 1]
+Collected 170 metrics over 169.8 seconds
+Collected 180 metrics over 179.8 seconds=========================>                                         (9 + 7) / 16]
+Collected 190 metrics over 189.8 seconds                                                                  (0 + 16) / 17]
+Collected 200 metrics over 199.8 seconds                                                                    (0 + 1) / 1]
+Collected 210 metrics over 209.8 seconds
+Collected 220 metrics over 219.9 seconds                                                                  (0 + 16) / 16]
+Collected 230 metrics over 229.9 seconds                                                                  (0 + 16) / 17]
+Collected 240 metrics over 239.9 seconds============================================================>     (16 + 1) / 17]
+Collected 250 metrics over 249.9 seconds                                                                    (0 + 1) / 1]
+Collected 260 metrics over 259.9 seconds                                                                  (0 + 16) / 16]
+Collected 270 metrics over 269.9 seconds                                                                  (0 + 16) / 17]
+Collected 280 metrics over 280.0 seconds                                                                  (0 + 16) / 16]
+Collected 290 metrics over 290.0 seconds                                                                  (0 + 16) / 17]
+Collected 300 metrics over 300.0 seconds============================================================>     (16 + 1) / 17]
+Collected 310 metrics over 310.0 seconds                                                                  (0 + 16) / 16]
+Collected 320 metrics over 320.0 seconds                                                                  (0 + 16) / 17]
+Collected 330 metrics over 330.0 seconds============================================================>     (16 + 1) / 17]
+Collected 340 metrics over 340.1 seconds                                                                    (0 + 1) / 1]
+Collected 350 metrics over 350.1 seconds                                                                    (0 + 1) / 1]
+Training completed in 355.69 seconds                                                                                    
+Collected 360 metrics over 360.1 seconds                                                                  (0 + 16) / 16]
+Collected 370 metrics over 370.1 seconds                                                                  (0 + 16) / 17]
+Collected 380 metrics over 380.1 seconds============================================================>     (16 + 1) / 17]
+Collected 390 metrics over 390.1 seconds                                                                    (0 + 1) / 1]
+Stopping monitoring, collected 393 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Decision Tree, Dataset: 4M
+CPU: avg=38.29%, max=99.10%
+Memory: avg=30.13%, max=31.50%
+Model Decision Tree evaluation completed: AUC=0.4216, Accuracy=0.7545, f1_score=0.6834
+
+Training Logistic Regression...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Logistic Regression on 4M dataset
+Collected 10 metrics over 9.5 seconds================>                                                     (7 + 9) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.5 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds
+Collected 50 metrics over 49.6 seconds                                                                                  
+Collected 60 metrics over 59.6 seconds===========================>                                         (9 + 7) / 16]
+Collected 70 metrics over 69.6 seconds                                                                    (0 + 16) / 17]
+Collected 80 metrics over 79.6 seconds                                                                      (0 + 1) / 1]
+Collected 90 metrics over 89.7 seconds                                                                      (0 + 1) / 1]
+Collected 100 metrics over 99.7 seconds                                                                   (0 + 16) / 16]
+Collected 110 metrics over 109.7 seconds======================================================>           (14 + 2) / 16]
+Collected 120 metrics over 119.7 seconds============================================================>     (16 + 1) / 17]
+Collected 130 metrics over 129.7 seconds                                                                    (0 + 1) / 1]
+Collected 140 metrics over 139.7 seconds                                                                    (0 + 1) / 1]
+Collected 150 metrics over 149.8 seconds                                                                  (1 + 15) / 16]
+Collected 160 metrics over 159.8 seconds                                                                  (0 + 16) / 17]
+Collected 170 metrics over 169.8 seconds============================================================>     (16 + 1) / 17]
+Collected 180 metrics over 179.8 seconds                                                                    (0 + 1) / 1]
+Collected 190 metrics over 189.8 seconds                                                                    (0 + 1) / 1]
+Collected 200 metrics over 199.8 seconds                                                                  (0 + 16) / 16]
+Collected 210 metrics over 209.9 seconds                                                                  (0 + 16) / 17]
+Collected 220 metrics over 219.9 seconds                                                                    (0 + 1) / 1]
+Collected 230 metrics over 229.9 seconds
+Collected 240 metrics over 239.9 seconds                                                                                
+Collected 250 metrics over 249.9 seconds=========================>                                         (9 + 7) / 16]
+Collected 260 metrics over 259.9 seconds                                                                  (0 + 16) / 17]
+Collected 270 metrics over 270.0 seconds                                                                    (0 + 1) / 1]
+Collected 280 metrics over 280.0 seconds                                                                    (0 + 1) / 1]
+Collected 290 metrics over 290.0 seconds                                                                  (0 + 16) / 16]
+Collected 300 metrics over 300.0 seconds
+Collected 310 metrics over 310.0 seconds                                                                  (0 + 16) / 17]
+Collected 320 metrics over 320.0 seconds                                                                  (0 + 16) / 16]
+Collected 330 metrics over 330.1 seconds                                                                  (0 + 16) / 17]
+Collected 340 metrics over 340.1 seconds============================================================>     (16 + 1) / 17]
+Collected 350 metrics over 350.1 seconds                                                                    (0 + 1) / 1]
+Collected 360 metrics over 360.1 seconds                                                                  (0 + 16) / 16]
+Collected 370 metrics over 370.1 seconds===================>                                               (8 + 8) / 16]
+Collected 380 metrics over 380.1 seconds                                                                  (0 + 16) / 17]
+Collected 390 metrics over 390.1 seconds                                                                  (0 + 16) / 16]
+Collected 400 metrics over 400.2 seconds                                                                  (0 + 16) / 17]
+Collected 410 metrics over 410.2 seconds============================================================>     (16 + 1) / 17]
+Training completed in 409.46 seconds
+Collected 420 metrics over 420.2 seconds===================>                                               (8 + 8) / 16]
+Collected 430 metrics over 430.2 seconds                                                                  (0 + 16) / 17]
+Collected 440 metrics over 440.2 seconds                                                                    (0 + 1) / 1]
+Collected 450 metrics over 450.3 seconds                                                                    (0 + 1) / 1]
+Stopping monitoring, collected 456 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Logistic Regression, Dataset: 4M
+CPU: avg=37.37%, max=99.40%
+Memory: avg=32.81%, max=33.70%
+Model Logistic Regression evaluation completed: AUC=0.6336, Accuracy=0.7469, f1_score=0.6438
+
+
+Processing dataset size: Full
+
+Training Random Forest...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Random Forest on Full dataset
+Collected 10 metrics over 9.5 seconds                                                                     (0 + 16) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.6 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds
+Collected 50 metrics over 49.6 seconds
+Collected 60 metrics over 59.6 seconds
+25/05/05 21:52:43 WARN MemoryStore: Not enough space to cache rdd_2669_0 in memory! (computed 1488.0 MiB so far)
+25/05/05 21:52:43 WARN BlockManager: Persisting block rdd_2669_0 to disk instead.
+Collected 70 metrics over 69.6 seconds                                                                      (0 + 1) / 1]
+Collected 80 metrics over 79.6 seconds                                                                      (0 + 1) / 1]
+Collected 90 metrics over 89.6 seconds                                                                      (0 + 1) / 1]
+Collected 100 metrics over 99.7 seconds                                                                     (0 + 1) / 1]
+Collected 110 metrics over 109.7 seconds                                                                    (0 + 1) / 1]
+Collected 120 metrics over 119.7 seconds
+Collected 130 metrics over 129.7 seconds                                                                    (0 + 1) / 1]
+Collected 140 metrics over 139.7 seconds                                                                  (0 + 16) / 16]
+Collected 150 metrics over 149.7 seconds                                                                  (0 + 16) / 17]
+Collected 160 metrics over 159.8 seconds                                                                  (5 + 12) / 17]
+Collected 170 metrics over 169.8 seconds                                                                    (0 + 1) / 1]
+Collected 180 metrics over 179.8 seconds
+Collected 190 metrics over 189.8 seconds                                                                  (0 + 16) / 16]
+Collected 200 metrics over 199.8 seconds======================================================>           (14 + 2) / 16]
+Collected 210 metrics over 209.8 seconds                                                                  (3 + 14) / 17]
+Collected 220 metrics over 219.9 seconds                                                                    (0 + 1) / 1]
+Collected 230 metrics over 229.9 seconds
+Collected 240 metrics over 239.9 seconds
+25/05/05 21:55:46 WARN MemoryStore: Not enough space to cache rdd_2776_0 in memory! (computed 1488.0 MiB so far)
+25/05/05 21:55:46 WARN BlockManager: Persisting block rdd_2776_0 to disk instead.
+Collected 250 metrics over 249.9 seconds
+Collected 260 metrics over 259.9 seconds                                                                    (0 + 1) / 1]
+Collected 270 metrics over 269.9 seconds
+Collected 280 metrics over 280.0 seconds                                                                    (0 + 1) / 1]
+Collected 290 metrics over 290.0 seconds                                                                    (0 + 1) / 1]
+Collected 300 metrics over 300.0 seconds                                                                    (0 + 1) / 1]
+Collected 310 metrics over 310.0 seconds                                                                    (0 + 1) / 1]
+Collected 320 metrics over 320.0 seconds                                                                                
+Collected 330 metrics over 330.0 seconds==========================================>                       (12 + 4) / 16]
+Collected 340 metrics over 340.1 seconds                                                                  (0 + 16) / 17]
+Collected 350 metrics over 350.1 seconds                                                                    (0 + 1) / 1]
+Collected 360 metrics over 360.1 seconds
+Collected 370 metrics over 370.1 seconds                                                                  (0 + 16) / 16]
+Collected 380 metrics over 380.1 seconds=============>                                                     (7 + 9) / 16]
+Collected 390 metrics over 390.1 seconds                                                                  (0 + 16) / 17]
+Collected 400 metrics over 400.2 seconds                                                                    (0 + 1) / 1]
+Collected 410 metrics over 410.2 seconds
+Collected 420 metrics over 420.2 seconds
+25/05/05 21:58:48 WARN MemoryStore: Not enough space to cache rdd_2883_0 in memory! (computed 1487.9 MiB so far)
+25/05/05 21:58:48 WARN BlockManager: Persisting block rdd_2883_0 to disk instead.
+Collected 430 metrics over 430.2 seconds
+Collected 440 metrics over 440.2 seconds                                                                    (0 + 1) / 1]
+Collected 450 metrics over 450.2 seconds
+Collected 460 metrics over 460.3 seconds                                                                    (0 + 1) / 1]
+Collected 470 metrics over 470.3 seconds                                                                    (0 + 1) / 1]
+Collected 480 metrics over 480.3 seconds                                                                    (0 + 1) / 1]
+Collected 490 metrics over 490.3 seconds                                                                    (0 + 1) / 1]
+Collected 500 metrics over 500.3 seconds
+Collected 510 metrics over 510.3 seconds=========================>                                         (9 + 7) / 16]
+Collected 520 metrics over 520.4 seconds                                                                  (0 + 16) / 17]
+Collected 530 metrics over 530.4 seconds                                                                    (0 + 1) / 1]
+Collected 540 metrics over 540.4 seconds
+Collected 550 metrics over 550.4 seconds                                                                    (0 + 1) / 1]
+Collected 560 metrics over 560.4 seconds=======>                                                          (6 + 10) / 16]
+Collected 570 metrics over 570.4 seconds                                                                  (0 + 16) / 17]
+Collected 580 metrics over 580.5 seconds                                                                  (0 + 16) / 16]
+Collected 590 metrics over 590.5 seconds                                                                  (0 + 16) / 17]
+Collected 600 metrics over 600.5 seconds============================================================>     (16 + 1) / 17]
+Collected 610 metrics over 610.5 seconds                                                                  (0 + 16) / 16]
+Collected 620 metrics over 620.5 seconds                                                                  (0 + 16) / 17]
+Collected 630 metrics over 630.5 seconds============================================================>     (16 + 1) / 17]
+Collected 640 metrics over 640.6 seconds                                                                    (0 + 1) / 1]
+Collected 650 metrics over 650.6 seconds                                                                    (0 + 1) / 1]
+Collected 660 metrics over 660.6 seconds                                                                    (0 + 1) / 1]
+Collected 670 metrics over 670.6 seconds
+Collected 680 metrics over 680.6 seconds
+Collected 690 metrics over 690.6 seconds                                                                    (0 + 1) / 1]
+Collected 700 metrics over 700.7 seconds
+Collected 710 metrics over 710.7 seconds                                                                    (0 + 1) / 1]
+Collected 720 metrics over 720.7 seconds                                                                    (0 + 1) / 1]
+Collected 730 metrics over 730.7 seconds
+Collected 740 metrics over 740.7 seconds                                                                    (0 + 1) / 1]
+Collected 750 metrics over 750.7 seconds
+Collected 760 metrics over 760.8 seconds
+Collected 770 metrics over 770.8 seconds=>                                                                (5 + 11) / 16]
+Collected 780 metrics over 780.8 seconds                                                                  (0 + 16) / 17]
+Collected 790 metrics over 790.8 seconds                                                                  (0 + 16) / 16]
+Collected 800 metrics over 800.8 seconds============================================================>     (15 + 1) / 16]
+Collected 810 metrics over 810.8 seconds                                                                  (0 + 16) / 17]
+Training completed in 813.31 seconds================================================================>     (16 + 1) / 17]
+Collected 820 metrics over 820.9 seconds                                                                  (0 + 16) / 16]
+Collected 830 metrics over 830.9 seconds                                                                  (0 + 16) / 17]
+Collected 840 metrics over 840.9 seconds============================================================>     (16 + 1) / 17]
+Collected 850 metrics over 850.9 seconds                                                                    (0 + 1) / 1]
+Collected 860 metrics over 860.9 seconds
+Stopping monitoring, collected 863 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Random Forest, Dataset: Full
+CPU: avg=27.63%, max=100.00%
+Memory: avg=35.54%, max=35.80%
+Model Random Forest evaluation completed: AUC=0.6541, Accuracy=0.7556, f1_score=0.6704
+
+
+Training Decision Tree...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Decision Tree on Full dataset
+Collected 10 metrics over 9.5 seconds==========>                                                          (6 + 10) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.5 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds
+Collected 50 metrics over 49.6 seconds
+25/05/05 22:07:01 WARN MemoryStore: Not enough space to cache rdd_3148_0 in memory! (computed 1488.0 MiB so far)
+25/05/05 22:07:01 WARN BlockManager: Persisting block rdd_3148_0 to disk instead.
+Collected 60 metrics over 59.6 seconds
+Collected 70 metrics over 69.6 seconds                                                                                  
+Collected 80 metrics over 79.6 seconds                                                                    (0 + 16) / 16]
+Collected 90 metrics over 89.6 seconds                                                                    (0 + 16) / 17]
+Collected 100 metrics over 99.7 seconds                                                                     (0 + 1) / 1]
+Collected 110 metrics over 109.7 seconds
+Collected 120 metrics over 119.7 seconds
+Collected 130 metrics over 129.7 seconds===================>                                               (8 + 8) / 16]
+Collected 140 metrics over 139.7 seconds                                                                  (0 + 16) / 17]
+Collected 150 metrics over 149.7 seconds                                                                    (0 + 1) / 1]
+Collected 160 metrics over 159.8 seconds
+Collected 170 metrics over 169.8 seconds
+Collected 180 metrics over 179.8 seconds
+25/05/05 22:09:07 WARN MemoryStore: Not enough space to cache rdd_3238_0 in memory! (computed 1488.0 MiB so far)
+25/05/05 22:09:07 WARN BlockManager: Persisting block rdd_3238_0 to disk instead.
+Collected 190 metrics over 189.8 seconds                                                                                
+Collected 200 metrics over 199.8 seconds                                                                  (0 + 16) / 16]
+Collected 210 metrics over 209.8 seconds                                                                  (0 + 16) / 17]
+Collected 220 metrics over 219.9 seconds                                                                  (3 + 14) / 17]
+Collected 230 metrics over 229.9 seconds                                                                    (0 + 1) / 1]
+Collected 240 metrics over 239.9 seconds
+Collected 250 metrics over 249.9 seconds                                                                  (0 + 16) / 16]
+Collected 260 metrics over 259.9 seconds                                                                  (0 + 16) / 17]
+Collected 270 metrics over 269.9 seconds============================================================>     (16 + 1) / 17]
+Collected 280 metrics over 280.0 seconds                                                                    (0 + 1) / 1]
+Collected 290 metrics over 290.0 seconds
+25/05/05 22:11:05 WARN MemoryStore: Not enough space to cache rdd_3328_0 in memory! (computed 1487.9 MiB so far)
+25/05/05 22:11:05 WARN BlockManager: Persisting block rdd_3328_0 to disk instead.
+Collected 300 metrics over 300.0 seconds
+Collected 310 metrics over 310.0 seconds                                                                    (0 + 1) / 1]
+Collected 320 metrics over 320.0 seconds                                                                  (0 + 16) / 16]
+Collected 330 metrics over 330.0 seconds============================================================>     (15 + 1) / 16]
+Collected 340 metrics over 340.1 seconds                                                                  (0 + 16) / 17]
+Collected 350 metrics over 350.1 seconds                                                                    (0 + 1) / 1]
+Collected 360 metrics over 360.1 seconds
+Collected 370 metrics over 370.1 seconds                                                                  (0 + 16) / 16]
+Collected 380 metrics over 380.1 seconds                                                                  (0 + 16) / 17]
+Collected 390 metrics over 390.1 seconds============================================================>     (16 + 1) / 17]
+Collected 400 metrics over 400.2 seconds==============================>                                   (10 + 6) / 16]
+Collected 410 metrics over 410.2 seconds                                                                  (0 + 16) / 17]
+Collected 420 metrics over 420.2 seconds                                                                    (0 + 1) / 1]
+Collected 430 metrics over 430.2 seconds                                                                  (0 + 16) / 16]
+Collected 440 metrics over 440.2 seconds                                                                  (0 + 16) / 17]
+Collected 450 metrics over 450.2 seconds                                                                    (0 + 1) / 1]
+Collected 460 metrics over 460.3 seconds                                                                    (0 + 1) / 1]
+Collected 470 metrics over 470.3 seconds                                                                    (0 + 1) / 1]
+Collected 480 metrics over 480.3 seconds                                                                    (0 + 1) / 1]
+Training completed in 487.78 seconds                                                                                    
+Collected 490 metrics over 490.3 seconds                                                                  (0 + 16) / 16]
+Collected 500 metrics over 500.3 seconds                                                                  (4 + 12) / 16]
+Collected 510 metrics over 510.3 seconds                                                                  (0 + 16) / 17]
+Collected 520 metrics over 520.4 seconds                                                                    (0 + 1) / 1]
+Collected 530 metrics over 530.4 seconds
+Stopping monitoring, collected 535 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Decision Tree, Dataset: Full
+CPU: avg=35.66%, max=100.00%
+Memory: avg=34.35%, max=36.10%
+Model Decision Tree evaluation completed: AUC=0.4211, Accuracy=0.7570, f1_score=0.6866
+
+
+Training Logistic Regression...
+Monitoring thread started
+Monitoring started, thread active: True
+Starting training for Logistic Regression on Full dataset
+Collected 10 metrics over 9.5 seconds=================================>                                   (10 + 6) / 16]
+Collected 20 metrics over 19.5 seconds                                                                    (0 + 16) / 17]
+Collected 30 metrics over 29.6 seconds                                                                      (0 + 1) / 1]
+Collected 40 metrics over 39.6 seconds
+Collected 50 metrics over 49.6 seconds
+25/05/05 22:16:00 WARN MemoryStore: Not enough space to cache rdd_3543_0 in memory! (computed 1488.0 MiB so far)
+25/05/05 22:16:00 WARN BlockManager: Persisting block rdd_3543_0 to disk instead.
+Collected 60 metrics over 59.6 seconds
+Collected 70 metrics over 69.6 seconds                                                                      (0 + 1) / 1]
+Collected 80 metrics over 79.6 seconds                                                                    (0 + 16) / 16]
+Collected 90 metrics over 89.7 seconds                                                                    (0 + 16) / 17]
+Collected 100 metrics over 99.7 seconds                                                                     (0 + 1) / 1]
+Collected 110 metrics over 109.7 seconds
+Collected 120 metrics over 119.7 seconds
+Collected 130 metrics over 129.7 seconds                                                                    (0 + 1) / 1]
+Collected 140 metrics over 139.8 seconds                                                                    (0 + 1) / 1]
+Collected 150 metrics over 149.8 seconds                                                                  (0 + 16) / 16]
+Collected 160 metrics over 159.8 seconds                                                                  (0 + 16) / 17]
+Collected 170 metrics over 169.8 seconds============================================================>     (16 + 1) / 17]
+Collected 180 metrics over 179.8 seconds                                                                    (0 + 1) / 1]
+Collected 190 metrics over 189.8 seconds
+25/05/05 22:18:20 WARN MemoryStore: Not enough space to cache rdd_3632_0 in memory! (computed 1488.0 MiB so far)
+25/05/05 22:18:20 WARN BlockManager: Persisting block rdd_3632_0 to disk instead.
+Collected 200 metrics over 199.8 seconds
+Collected 210 metrics over 209.9 seconds                                                                    (0 + 1) / 1]
+Collected 220 metrics over 219.9 seconds                                                                  (0 + 16) / 16]
+Collected 230 metrics over 229.9 seconds                                                                  (0 + 16) / 17]
+Collected 240 metrics over 239.9 seconds                                                                    (0 + 1) / 1]
+Collected 250 metrics over 249.9 seconds
+Collected 260 metrics over 259.9 seconds
+Collected 270 metrics over 270.0 seconds                                                                    (0 + 1) / 1]
+Collected 280 metrics over 280.0 seconds                                                                    (0 + 1) / 1]
+Collected 290 metrics over 290.0 seconds                                                                  (0 + 16) / 16]
+Collected 300 metrics over 300.0 seconds                                                                  (0 + 16) / 17]
+Collected 310 metrics over 310.0 seconds============================================================>     (16 + 1) / 17]
+Collected 320 metrics over 320.1 seconds                                                                    (0 + 1) / 1]
+Collected 330 metrics over 330.1 seconds
+Collected 340 metrics over 340.1 seconds
+25/05/05 22:20:46 WARN MemoryStore: Not enough space to cache rdd_3721_0 in memory! (computed 1487.9 MiB so far)
+25/05/05 22:20:46 WARN BlockManager: Persisting block rdd_3721_0 to disk instead.
+Collected 350 metrics over 350.1 seconds
+Collected 360 metrics over 360.1 seconds                                                                                
+Collected 370 metrics over 370.1 seconds=======>                                                          (6 + 10) / 16]
+Collected 380 metrics over 380.1 seconds                                                                  (0 + 16) / 17]
+Collected 390 metrics over 390.2 seconds                                                                    (0 + 1) / 1]
+Collected 400 metrics over 400.2 seconds
+Collected 410 metrics over 410.2 seconds
+Collected 420 metrics over 420.2 seconds                                                                    (0 + 1) / 1]
+Collected 430 metrics over 430.2 seconds                                                                    (0 + 1) / 1]
+Collected 440 metrics over 440.2 seconds                                                                  (0 + 16) / 16]
+Collected 450 metrics over 450.3 seconds                                                                  (0 + 16) / 17]
+Collected 460 metrics over 460.3 seconds                                                                  (0 + 16) / 16]
+Collected 470 metrics over 470.3 seconds=============>                                                     (7 + 9) / 16]
+Collected 480 metrics over 480.3 seconds                                                                  (0 + 16) / 17]
+Collected 490 metrics over 490.3 seconds                                                                    (0 + 1) / 1]
+Collected 500 metrics over 500.3 seconds                                                                    (0 + 1) / 1]
+Collected 510 metrics over 510.4 seconds                                                                                
+Collected 520 metrics over 520.4 seconds                                                                  (1 + 15) / 16]
+Collected 530 metrics over 530.4 seconds                                                                  (0 + 16) / 17]
+Collected 540 metrics over 540.4 seconds============================================================>     (16 + 1) / 17]
+Collected 550 metrics over 550.4 seconds=============>                                                     (7 + 9) / 16]
+Collected 560 metrics over 560.4 seconds                                                                  (0 + 16) / 17]
+Training completed in 566.04 seconds================================================================>     (16 + 1) / 17]
+Collected 570 metrics over 570.5 seconds                                                                  (0 + 16) / 16]
+Collected 580 metrics over 580.5 seconds                                                                  (0 + 16) / 17]
+Collected 590 metrics over 590.5 seconds============================================================>     (16 + 1) / 17]
+Collected 600 metrics over 600.5 seconds                                                                    (0 + 1) / 1]
+Collected 610 metrics over 610.5 seconds
+Collected 620 metrics over 620.5 seconds                                                                    (0 + 1) / 1]
+Stopping monitoring, collected 628 metrics                                                                              
+Monitoring thread shut down successfully
+Performance metrics - Model: Logistic Regression, Dataset: Full
+CPU: avg=33.51%, max=99.90%
+Memory: avg=35.47%, max=35.70%
+Model Logistic Regression evaluation completed: AUC=0.6340, Accuracy=0.7498, f1_score=0.6474
+Available columns in results_df: ['timestamp', 'model_name', 'dataset_size', 'avg_cpu', 'max_cpu', 'avg_memory', 'max_memory', 'auc', 'accuracy', 'f1_score', 'training_time', 'prediction_time']
+Sample data in results_df:
+                   timestamp           model_name dataset_size  ...  f1_score  training_time  prediction_time
+0 2025-05-05 21:17:12.576946        Random Forest           1M  ...  0.664027     349.894268        28.044256
+1 2025-05-05 21:22:08.065919        Decision Tree           1M  ...  0.687619     262.983266        30.836921
+2 2025-05-05 21:27:45.667072  Logistic Regression           1M  ...  0.641169     305.989038        27.884342
+3 2025-05-05 21:37:29.671721        Random Forest           4M  ...  0.674772     543.970803        36.756063
+4 2025-05-05 21:44:04.314244        Decision Tree           4M  ...  0.683421     355.689056        35.779845
+
+[5 rows x 12 columns]
+Data to be plotted:
+            model_name dataset_size  training_time  accuracy    avg_cpu  avg_memory
+0        Random Forest           1M     349.894268  0.750957  46.387599   20.865172
+1        Decision Tree           1M     262.983266  0.753436  48.862712   22.071186
+2  Logistic Regression           1M     305.989038  0.744700  47.251039   22.450742
+3        Random Forest           4M     543.970803  0.754878  32.474443   27.589708
+4        Decision Tree           4M     355.689056  0.754466  38.289340   30.127157
+
+
+Testing prediction performance for Random Forest...
+Model saved to models/random_forest_pipeline                                                                            
+Testing Random Forest with batch size: 1000
+Monitoring thread started
+Monitoring started, thread active: True
+Collected 10 metrics over 9.5 seconds=================================>                                   (10 + 6) / 16]
+Processed 1000 records in 11.76 seconds                                                                                 
+Stopping monitoring, collected 13 metrics
+Monitoring thread shut down successfully
+Performance metrics - Avg CPU: 39.3%, Max CPU: 89.8%, Avg Memory: 35.6%, Records/sec: 85.0
+Testing Random Forest with batch size: 5000
+Monitoring thread started
+Monitoring started, thread active: True
+Collected 10 metrics over 9.5 seconds                                                                     (0 + 16) / 16]
+Processed 5000 records in 13.77 seconds                                                                                 
+Stopping monitoring, collected 15 metrics
+Monitoring thread shut down successfully
+Performance metrics - Avg CPU: 39.2%, Max CPU: 92.9%, Avg Memory: 35.7%, Records/sec: 363.0
+
+Generating detailed prediction results for Random Forest...
+Generating detailed prediction results for Random Forest...
+Saved detailed prediction results to results/random_forest_predictions.csv                                              
+
+Testing prediction performance for Decision Tree...
+Model saved to models/decision_tree_pipeline
+Testing Decision Tree with batch size: 1000
+Monitoring thread started
+Monitoring started, thread active: True
+Collected 10 metrics over 9.5 seconds============================>                                         (9 + 7) / 16]
+Processed 1000 records in 12.29 seconds                                                                                 
+Stopping monitoring, collected 13 metrics
+Monitoring thread shut down successfully
+Performance metrics - Avg CPU: 36.4%, Max CPU: 98.1%, Avg Memory: 35.7%, Records/sec: 81.3
+Testing Decision Tree with batch size: 5000
+Monitoring thread started
+Monitoring started, thread active: True
+Collected 10 metrics over 9.5 seconds==========>                                                          (6 + 10) / 16]
+Processed 5000 records in 12.51 seconds                                                                                 
+Stopping monitoring, collected 13 metrics
+Monitoring thread shut down successfully
+Performance metrics - Avg CPU: 37.5%, Max CPU: 98.5%, Avg Memory: 35.6%, Records/sec: 399.7
+
+Generating detailed prediction results for Decision Tree...
+Generating detailed prediction results for Decision Tree...
+Saved detailed prediction results to results/decision_tree_predictions.csv                                              
+
+Testing prediction performance for Logistic Regression...
+Model saved to models/logistic_regression_pipeline
+Testing Logistic Regression with batch size: 1000
+Monitoring thread started
+Monitoring started, thread active: True
+Collected 10 metrics over 9.5 seconds====>                                                                (5 + 11) / 16]
+Processed 1000 records in 12.67 seconds                                                                                 
+Stopping monitoring, collected 14 metrics
+Monitoring thread shut down successfully
+Performance metrics - Avg CPU: 38.5%, Max CPU: 88.6%, Avg Memory: 35.6%, Records/sec: 78.9
+Testing Logistic Regression with batch size: 5000
+Monitoring thread started
+Monitoring started, thread active: True
+Collected 10 metrics over 9.5 seconds============================>                                         (9 + 7) / 16]
+Processed 5000 records in 12.97 seconds                                                                                 
+Stopping monitoring, collected 14 metrics
+Monitoring thread shut down successfully
+Performance metrics - Avg CPU: 36.6%, Max CPU: 99.3%, Avg Memory: 35.6%, Records/sec: 385.5
+
+Generating detailed prediction results for Logistic Regression...
+Generating detailed prediction results for Logistic Regression...
+Saved detailed prediction results to results/logistic_regression_predictions.csv                                        
+Available columns in pred_results_df: ['model_name', 'batch_size', 'prediction_time', 'records_per_second', 'avg_cpu', 'max_cpu', 'avg_memory', 'max_memory']
+
+Generating enhanced visualizations...
+
+(azureml_py38) azureuser@computeinw:~/cloudfiles/code/Users/bra_er-rahmaouy$
