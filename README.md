@@ -8,7 +8,7 @@
 - **Supervisor:** José Manuel García Nieto
 - **Co-supervisor:** Antonio Jesús Nebro Urbaneja
 
-> 📄 Full report: [`docs/Memory_Report.pdf`](docs/Memory_Report.pdf) (English, with Spanish abstract and conclusions summary)
+> 📄 Full report: Memory Report.pdf (English, with Spanish abstract and conclusions summary)
 
 ---
 
